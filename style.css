@@ -6,3 +6,50 @@ body {
 * {
 	box-sizing: border-box;
 }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding-top: 20px;
+}
+.wrap__block {
+	position: relative;
+	flex: 0 0 50%;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 15px;
+}
+.wrap__block:last-child {
+	margin-bottom: 0;
+}
+.wrap__block p {
+	margin: 0;
+	background-color: orange;
+	padding: 10px 25px;
+	color: #fff;
+	border-radius: 10px;
+}
+.wrap__close {
+	position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+     transform: 0.2s;
+}
+.wrap__close:hover {
+	 color: pink;
+}
+
+@media only screen and (min-width: 767px){
+	.wrap {
+		flex-direction: row;	 
+	}			
+}
