@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Johnhor/Examples#readme",
   "dependencies": {
+    "jquery": "^3.4.1",
     "node-static": "^0.7.11"
   }
 }
