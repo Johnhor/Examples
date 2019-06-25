@@ -113,8 +113,16 @@ img {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 }
 .button {
 	align-self: center;
+	transition: all 0.2s;
 }
+.text {
+	text-align: center;
+}
+
+
