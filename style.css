@@ -2,6 +2,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	color: #162d5a;
 	/*font-family: 'Roboto', sans-serif;*/
 }
 
@@ -83,8 +84,10 @@ img {
 	left: -2px;
 }*/
 
-.container {
+.container-feed {
 	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 .menu {
   padding: 20px;
@@ -125,4 +128,114 @@ img {
 	text-align: center;
 }
 
+.offers-group__header {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.offers-group__list {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
 
+img {
+	max-width: 100%;
+}
+
+.offer-card {
+	 padding: 20px 20px;
+	 box-shadow: 0 2px 4px rgba(36,79,152,.15);
+	 border-radius: 5px;
+	 cursor: pointer;
+	 margin-bottom: 20px;
+	}
+
+.offer-card__logo {
+	width: inherit;
+	height: 36px;
+}
+.offer-card__title, .offer-card__value {
+	font-size: 16px;
+	margin: 0;
+}
+.offer-card__subtitle, .offer-card__label {
+	font-size: 13px;
+	color: gray;
+	margin: 0;
+}
+.offer-card__header-wrapper {
+	 flex: 1;
+	 padding-left: 20px;
+}
+.offer-card__options {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex: 2;
+}
+
+.offer-card__img--floated
+.offer-card__img--wrapper {
+	 position: absolute; 
+	 left: -13px;
+     top: 4px;
+}
+.offer-card__link {
+	padding-left: 50px;
+}
+.offer-card__option {
+	padding: 0 20px;
+}
+.offer-card__toggle {
+	border: none;
+	background: none;
+	transform: rotate(90deg);
+}
+.offer-card__header {
+	    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+}
+.offer-card__open {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top: 0;
+}
+.offer-card__open .offer-card__title{
+	color: gray;
+	font-size: 13px;
+}
+.offer-card__text {
+	font-size: 13px;
+}
+.offer-card__text--accent {
+	font-weight: bold;
+}
+.offer-card__open .offer-card__options {
+	justify-content: flex-start;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+.offer-card__open .offer-card__options:last-child {
+	margin: 0;
+}
+.offer-card__open .offer-card__list {
+	list-style: none;
+	font-size: 13px;
+}
+.offer-card__list-social {
+	padding-left: 20px;
+	margin: 0;
+}
+.offer-card__list-social li {
+	margin-right: 10px;
+	display: inline-block;
+}
+.offer-card__open .offer-card__value {
+	font-size: 13px;
+}
