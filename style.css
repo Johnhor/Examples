@@ -172,7 +172,7 @@ img {
 .offer-card__options {
 	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	flex: 2;
 }
 
@@ -187,6 +187,7 @@ img {
 }
 .offer-card__option {
 	padding: 0 20px;
+	position: relative;
 }
 .offer-card__toggle {
 	border: none;
