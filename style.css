@@ -183,7 +183,8 @@ img {
      top: 4px;
 }
 .offer-card__link {
-	padding-left: 50px;
+	flex: 0 0 200px;
+	text-align: center;
 }
 .offer-card__option {
 	padding: 0 20px;
@@ -238,5 +239,10 @@ img {
 	display: inline-block;
 }
 .offer-card__open .offer-card__value {
+	font-size: 13px;
+}
+.offer-card__notice {
+	margin: 0;
+	text-align: center;
 	font-size: 13px;
 }
