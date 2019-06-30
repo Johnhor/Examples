@@ -1,4 +1,3 @@
-
 const button = document.querySelectorAll('.offer-card__header');
 
 for(let i = 0; i < button.length; i++){
